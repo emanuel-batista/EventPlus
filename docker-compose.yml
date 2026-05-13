@@ -39,7 +39,7 @@ services:
     container_name: api-pessoas
     restart: always
     ports:
-      - "8001:8001"
+      - "127.0.0.1:8001:8001"
     environment:
       POSTGRES_HOST: postgres-db
       POSTGRES_PORT: 5432
@@ -57,7 +57,7 @@ services:
     container_name: api-eventos
     restart: always
     ports:
-      - "8002:8002"
+      - "127.0.0.1:8002:8002"
     environment:
       MONGO_HOST: mongo-db
       MONGO_PORT: 27017
@@ -75,7 +75,7 @@ services:
     container_name: api-credenciamento
     restart: always
     ports:
-      - "8003:8003"
+      - "127.0.0.1:8003:8003"
     environment:
       MONGO_HOST: mongo-db
       MONGO_PORT: 27017
